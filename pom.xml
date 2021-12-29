@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>manifold-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>manifold-demo-web</module>
+        <module>manifold-demo-web-2</module>
+        <module>manifold-demo-web-3</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <compile.version>8</compile.version>
+        <manifold.version>2021.1.34</manifold.version>
+        <spring-boot.version>2.6.2</spring-boot.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- manifold -->
+            <dependency>
+                <groupId>systems.manifold</groupId>
+                <artifactId>manifold-ext</artifactId>
+                <version>${manifold.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>systems.manifold</groupId>
+                <artifactId>manifold-ext-rt</artifactId>
+                <version>${manifold.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>systems.manifold</groupId>
+                <artifactId>manifold-text</artifactId>
+                <version>${manifold.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
