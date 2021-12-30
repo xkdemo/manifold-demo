@@ -9,6 +9,7 @@ import manifold.ext.rt.api.This;
 @Extension
 public class ServerHttpRequestExt {
   // cannot find symbols
+  // uncomment this method, compile failed.
 //  public static void helloWorld(@This ServerHttpRequest thiz, String hello) {
 //    if (hello.isNullOrEmpty()) {
 //      System.out.println("bye!");
