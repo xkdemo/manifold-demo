@@ -96,11 +96,6 @@ add `maven-compiler-plugin`
                         <artifactId>manifold-text</artifactId>
                         <version>${manifold.version}</version>
                     </path>
-                    <path>
-                        <groupId>systems.manifold</groupId>
-                        <artifactId>manifold-collections</artifactId>
-                        <version>${manifold.version}</version>
-                    </path>
                 </annotationProcessorPaths>
             </configuration>
         </plugin>
