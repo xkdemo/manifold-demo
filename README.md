@@ -103,3 +103,19 @@ add `maven-compiler-plugin`
 </build>
 ```
 
+## manifold-demo-web-4
+A `Extension Library`, compiled ok;
+
+extend `org.springframework.http.HttpRequest`:
+```java
+@Extension
+public class HttpRequestExt {
+  public static void helloWorld(@This HttpRequest thiz, String hello) {
+    if (hello.isNullOrEmpty()) {
+      System.out.println("bye!");
+    }
+    System.out.println("hello " + hello + "!");
+  }
+}
+```
+

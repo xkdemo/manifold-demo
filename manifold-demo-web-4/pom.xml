@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>manifold-demo-web-3</artifactId>
+    <artifactId>manifold-demo-web-4</artifactId>
 
     <dependencies>
         <dependency>
@@ -50,11 +50,11 @@
                     </compilerArgs>
                     <!-- Add the processor path for the plugin -->
                     <annotationProcessorPaths>
-<!--                        <path>-->
-<!--                            <groupId>systems.manifold</groupId>-->
-<!--                            <artifactId>manifold-ext</artifactId>-->
-<!--                            <version>${manifold.version}</version>-->
-<!--                        </path>-->
+                        <path>
+                            <groupId>systems.manifold</groupId>
+                            <artifactId>manifold-ext</artifactId>
+                            <version>${manifold.version}</version>
+                        </path>
                         <path>
                             <groupId>systems.manifold</groupId>
                             <artifactId>manifold-text</artifactId>
@@ -77,7 +77,7 @@
                             <!--class files as source must be available for extension method classes-->
                             <Contains-Sources>java,class</Contains-Sources>
                             <!--JPMS module name-->
-                            <Automatic-Module-Name>manifold.demo.web.3</Automatic-Module-Name>
+                            <Automatic-Module-Name>manifold.demo.web.4</Automatic-Module-Name>
                         </manifestEntries>
                     </archive>
                 </configuration>

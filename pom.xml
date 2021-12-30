@@ -11,6 +11,7 @@
         <module>manifold-demo-web</module>
         <module>manifold-demo-web-2</module>
         <module>manifold-demo-web-3</module>
+        <module>manifold-demo-web-4</module>
     </modules>
     <packaging>pom</packaging>
 
