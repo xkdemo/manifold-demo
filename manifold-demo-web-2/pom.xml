@@ -51,21 +51,6 @@
                 </configuration>
             </plugin>
         </plugins>
-
-        <pluginManagement>
-            <!-- 很关键,没有这个,自定义manifold library总是找不到符号 -->
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <compilerArgs>
-                            <arg>-Xplugin:Manifold no-bootstrap</arg>
-                        </compilerArgs>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 
 </project>
