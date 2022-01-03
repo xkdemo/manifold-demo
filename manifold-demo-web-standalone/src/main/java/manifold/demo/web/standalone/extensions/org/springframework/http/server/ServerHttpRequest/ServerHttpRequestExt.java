@@ -1,4 +1,4 @@
-package manifold.demo.extensions.org.springframework.http.server.ServerHttpRequest;
+package manifold.demo.web.standalone.extensions.org.springframework.http.server.ServerHttpRequest;
 
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
